@@ -1,0 +1,479 @@
+/* ========== GUIDES AND ATTRACTION PAGE CSS BY FUKAI ==========*/
+
+/* ========== TOPPANEL (HEADER + EOTM) ========== */
+/* header */
+@font-face {
+    font-family: 'Monoton' , cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+  
+  header {
+    grid-area: header;
+    color: darkslategrey;
+  }
+  
+  header h1{
+    font-size: 42px;
+  }
+  
+  header p{
+    text-align: justify;
+  }
+  
+  header p:nth-of-type(1) {
+    font-size: 30px;
+  }
+  
+  header p:nth-of-type(1) span:nth-of-type(1) {
+    font-family: 'Monoton' , cursive;
+    font-size: 36px;
+  }
+  
+  header p:nth-of-type(1) span:nth-of-type(2) {
+    font-size: 20px;
+  }
+  
+  /* Event of the month (EOTM) */
+  #EOTM {
+    grid-area: EOTM;
+    cursor: pointer;
+  }
+
+  #EOTM:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+    transition: 00.4s;
+  }
+  
+  .TopPanel > p {
+    grid-area: SM;
+    text-align: left;
+    font-size: 1.17em;
+    font-weight: bold;
+    color: darkslategrey;
+    padding-top: 100px;
+  }
+  
+  .TopPanel { 
+    display: grid; 
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-areas: 
+    '. header . EOTM .'
+    '. SM . . .';
+    column-gap: 30px;
+    background-color: white;
+    margin-top: 60px;
+  } 
+  
+  #EOTM {
+    position: relative;
+    text-align: left;
+    color: papayawhip;
+    z-index: 0;
+  }
+  
+  #EOTM > img {
+    border-radius: 8px;
+    margin-top: 20px;
+    object-fit: cover;
+  }
+  
+  #EOTM > p:nth-of-type(1) {
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  #EOTM > p:nth-of-type(2) {
+    position: absolute;
+    bottom: 8px;
+    left:  16px;
+    text-decoration: underline;
+  }
+
+  /* ========== PARK MAP PANEL ========== */
+  
+  #MapOfThemePark > img {
+    border-radius: 1px;
+    width: 100%; 
+    /* height: 800px; */
+    margin-top: 20px;
+    /* object-fit: cover; */
+  }
+
+  /* ========== ATTRACTIONS PANEL ========== */
+  
+  #OurAttractions {
+    margin-top: 120px;
+  }
+  
+  #OurAttractions h3 {
+    grid-area: OAh3;
+    text-align: center;
+    color: darkslategrey;
+    font-size: 1.17em;
+  
+    grid-column: 2/5;
+    grid-row: 1;
+  }
+/* anchor end point */
+  .anchorAT {
+    display: block;
+    bottom: 90%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* ATTRACTION 1 */
+  .Attraction1 {
+    grid-area: A1;
+    text-align: left;
+    position: relative;
+    color: palegoldenrod;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 720px;
+    cursor: pointer;
+  
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+  
+  .Attraction1 > img {
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .Attraction1 > p:nth-of-type(1) {
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .Attraction1 > p:nth-of-type(2) {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    text-decoration: underline;
+  }
+
+  .AT1H {
+    width: 100%;
+    height: 0px;
+    padding-top: 0px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    margin-top:300px;
+    position:absolute;
+    background-color: red;
+    font-size: 80px;
+    line-height: 100px;
+    text-align:center;
+    color: #FFF;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-family: 'Monoton' , cursive;
+  }
+
+  .Attraction1:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+    transform: scale(1.001);
+  }
+
+  .Attraction1:hover .AT1H {
+    margin-top: -164px;
+    height: 150px;
+    padding-top: 10px;
+  }
+  
+  .Attraction1T {
+    grid-area: A1T;
+    text-align: left;
+    font-size: 32px;
+    width: 40;
+    color: darkslategrey;
+    font-weight: bold;
+    padding: 3rem;
+  
+    grid-column: 3/5;
+    grid-row: 2;
+  }
+
+  .Attraction1T > p:nth-of-type(2) {
+    font-size: 28px;
+  }
+
+  .Attraction1T p:nth-of-type(3) {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .Attraction1T p:nth-of-type(3) span {
+    font-weight: bold;
+  }
+  
+  /* ATTRACTION 2 */
+  .Attraction2 {
+    grid-area: A2;
+    text-align: left;
+    position: relative;
+    color: palegoldenrod;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 720px;
+    cursor: pointer;
+  
+    grid-column: 4/5;
+    grid-row: 3;
+  }
+  
+  .Attraction2 > img {
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .Attraction2 > p:nth-of-type(1) {
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .Attraction2 > p:nth-of-type(2) {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    text-decoration: underline;
+  }
+
+  .AT2H {
+    width: 100%;
+    height: 0px;
+    padding-top: 0px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    margin-top:300px;
+    position:absolute;
+    background-color: red;
+    font-size: 80px;
+    line-height: 100px;
+    text-align:center;
+    color: #FFF;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-family: 'Monoton' , cursive;
+  }
+
+  .Attraction2:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+    transform: scale(1.001);
+  }
+
+  .Attraction2:hover .AT2H {
+    margin-top: -164px;
+    height: 150px;
+    padding-top: 10px;
+  }
+  
+  .Attraction2T {
+    grid-area: A2T;
+    text-align: left;
+    font-size: 32px;
+    align-content: flex-end;
+    justify-content: right;
+    color: darkslategrey;
+    font-weight: bold;
+    padding: 3rem;
+  
+    grid-column: 2/4;
+    grid-row: 3;
+    width: 40
+  }
+
+  .Attraction2T > p:nth-of-type(2) {
+    font-size: 28px;
+  }
+
+  .Attraction2T p:nth-of-type(3) {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .Attraction2T p:nth-of-type(3) span {
+    font-weight: bold;
+  }
+
+  /* ATTRACTION 3 */
+  .Attraction3 {
+    grid-area: A3;
+    text-align: left;
+    position: relative;
+    color: palegoldenrod;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 720px;
+    cursor: pointer;
+  
+    grid-column: 2/3;
+    grid-row: 4;
+  }
+  
+  .Attraction3 > img {
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .Attraction3 > p:nth-of-type(1) {
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .Attraction3 > p:nth-of-type(2) {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    text-decoration: underline;
+  }
+
+  .AT3H {
+    width: 100%;
+    height: 0px;
+    padding-top: 0px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+    margin-top:300px;
+    position:absolute;
+    background-color: red;
+    font-size: 80px;
+    line-height: 100px;
+    text-align:center;
+    color: #FFF;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-family: 'Monoton' , cursive;
+  }
+
+  .Attraction3:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+    transform: scale(1.001);
+  }
+
+  .Attraction3:hover .AT3H {
+    margin-top: -164px;
+    height: 150px;
+    padding-top: 10px;
+  }
+  
+  .Attraction3T {
+    grid-area: A3T;
+    text-align: left;
+    font-size: 32px;
+    width: 40;
+    border-radius: 8px;
+    color: darkslategrey;
+    font-weight: bold;
+    padding: 3rem;
+  
+    grid-column: 3/5;
+    grid-row: 4;
+  }
+
+  .Attraction3T > p:nth-of-type(2) {
+    font-size: 28px;
+  }
+
+  .Attraction3T p:nth-of-type(3) {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .Attraction3T p:nth-of-type(3) span {
+    font-weight: bold;
+  }
+  
+  /* SET ATTRACTIONS PANEL GRID DISPLAY  */
+  #OurAttractions {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: minmax(100px, auto);
+  
+  }
+  
+  /* #OurAttractions {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-areas:
+    '. . OAh3 . .' 
+    '. A1 A1T . .'
+    '. . A2T A2 .'
+    '. A3 A3T . .';
+  
+  } */
+  
+  #services {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  
+  #services h2, #services {
+    text-align: center;
+    color: darkslategrey;
+  }
+  
+  /* ==========SERVICES PANEL BY HARITH========== */
+.services-container {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.services-elements {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.services-element-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.services-element-wrapper img {
+  margin-bottom: 20px;
+}
+
+.services-element-wrapper:hover {
+  background: #ffea82;
+}

@@ -1,0 +1,203 @@
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+  img {
+    border-radius: 20px;
+  }
+  
+  /* TICKETING HEADER */
+  #TICKETING {
+    grid-area: TICKETING;
+    cursor: pointer;
+  }
+
+  #TICKETING:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+    transition: 0.4s;
+  }
+  
+  .TopPanel > p {
+    grid-area: DS;
+    text-align: left;
+    font-size: 1.17em;
+    font-weight: bold;
+    color: darkslategrey;
+    padding-top: 100px;
+  }
+  
+  .TopPanel { 
+    display: grid; 
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-areas: 
+    '. TICKETING . header .'
+    '. DS . . .';
+    column-gap: 30px;
+    background-color: white;
+    margin-top: 60px;
+  } 
+  
+  #TICKETING {
+    position: relative;
+    text-align: left;
+    color: papayawhip;
+    z-index: 0;
+  }
+  
+  #TICKETING > img {
+    border-radius: 8px;
+    margin-top: 20px;
+    object-fit: cover;
+  }
+  
+  #TICKETING > p:nth-of-type(1) {
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  #TICKETING > p:nth-of-type(2) {
+    position: absolute;
+    bottom: 8px;
+    left:  16px;
+    text-decoration: underline;
+    
+  }
+
+  header {
+    grid-area: header;
+    color: darkslategrey;
+  }
+  
+  header h1{
+    font-size: 42px;
+  }
+  
+  header p{
+    text-align: justify;
+  }
+  
+  header p:nth-of-type(1) {
+    font-size: 30px;
+  }
+  
+  header p:nth-of-type(1) span:nth-of-type(1) {
+    font-size: 36px;
+  }
+  
+  header p:nth-of-type(1) span:nth-of-type(2) {
+    font-size: 20px;
+  }
+/* MIDDLE CONTAINER */
+.MiddleContainer {
+    background-image : url(/ticketing/Images/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 1000px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-areas: 
+    ' . MH MH MH . '
+    ' . box-1 box-2 box-3 . ';
+    text-align: left;
+    column-gap: 50px;
+}
+button {
+    background-color: #e8dc70;
+    margin-top: 20%;
+    padding: auto;
+    border: none;
+    box-shadow: 3px 3px grey;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+    cursor: pointer;
+}
+button > h3 {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+button > p {
+    font-size: 20px;
+    text-align: center;
+}
+#box-1 {
+    grid-area: box-1;
+}
+#box-2 {
+    grid-area: box-2;
+}
+#box-3 {
+    grid-area: box-3;
+}
+#midheader {
+    grid-area: MH;
+    text-align: center;
+    font-size: 30px;
+    color: #e8dc70;
+    text-shadow: 3px 2px black;
+}
+ 
+/* BOTTOM CONTAINER */
+.promo-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-areas: 
+    '. promo-1 . DS1 .'
+    '. DS2 . promo-2 .'
+    '. promo-3 . DS3 .';
+    height: auto;
+    padding-bottom: 40px;
+    background-color: white;
+}
+
+.promo-section {
+    background-color: #e03b3b;
+    text-align: center;
+}
+
+.promo-1{
+    grid-area: promo-1;
+    padding-bottom: 30px;
+}
+.promo-2{
+    grid-area: promo-2;
+    padding-bottom: 30px;
+}
+.promo-3{
+    grid-area: promo-3;
+    padding-bottom: 30px;
+}
+.DS1 {
+    grid-area: DS1;
+    font-size: 20px;
+}
+.DS2 {
+    grid-area: DS2;
+    font-size: 20px;
+}
+.DS3 {
+    grid-area: DS3;
+    font-size: 20px;
+}
+
+/* TEXT DEFINATION */
+h4 {
+    color: rgb(30,200,200);
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px navy;
+}
+
+.btn2 {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+}
